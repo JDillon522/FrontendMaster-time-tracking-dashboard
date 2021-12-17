@@ -1,6 +1,6 @@
 # Frontend Mentor - Time tracking dashboard solution
 
-This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -20,6 +20,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 ## Overview
 
+I opted to do this with native CSS and vanilla JavaScript for the fun of it. However the design of it really lends itself to react since its a very repeated pattern with only config changes.
 ### The challenge
 
 Users should be able to:
@@ -28,17 +29,23 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Switch between viewing Daily, Weekly, and Monthly stats
 
-### Screenshot
+Extra Credit:
+- Implement a tablet layout
 
-![](./screenshot.jpg)
+### Screenshots
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+Desktop: On the "Monthly" setting
+![Desktop-Monthly](./images/desktop_monthly_screenshot.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+Desktop: On the "Weekly" setting
+![Desktop-Weekly](./images/desktop_weekly_screenshot.png)
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+Tablet: On the "Monthly" setting
+![Tablet-Monthly](./images/tablet_monthly_screenshot.png)
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+Mobile: On the "Monthly" setting
+![Mobile-Monthly](./images/mobile_monthly_screenshot.png)
+
 
 ### Links
 
