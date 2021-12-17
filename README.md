@@ -31,15 +31,19 @@ Extra Credit:
 ### Screenshots
 
 Desktop: On the "Monthly" setting
+
 ![Desktop-Monthly](./images/desktop_monthly_screenshot.png)
 
 Desktop: On the "Weekly" setting
+
 ![Desktop-Weekly](./images/desktop_weekly_screenshot.png)
 
 Tablet: On the "Monthly" setting
+
 ![Tablet-Monthly](./images/tablet_monthly_screenshot.png)
 
 Mobile: On the "Monthly" setting
+
 ![Mobile-Monthly](./images/mobile_monthly_screenshot.png)
 
 
