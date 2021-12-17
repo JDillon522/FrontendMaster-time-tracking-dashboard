@@ -23,13 +23,20 @@
     --font: 'Work Sans', sans-serif;
     /* Layout */
     --border-radius: 15px;
-    --card-padding: 20px;
+    --default-spacing: 20px;
+    /* I cant use vars in media queries. Dukes..*/
+    --tablet-breakpoint: 700px;
+    --desktop-breakpoint: 950px;
 }
 
 html, body {
     width: 100%;
-    height: 100%;
+    height: fit-content;
     margin: 0;
+}
+
+body * {
+    transition: all .25s ease-in;
 }
 
 body {
@@ -43,15 +50,49 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr [col]);
-    grid-template-rows: repeat(2, 1fr [row]);
+    grid-template-columns: repeat(1, 1fr [col]);
+    grid-template-rows: repeat(1, 1fr [row]);
     grid-template-areas:
-        "user work     play   study"
-        "user exercise social self-care";
-    column-gap: 20px;
-    row-gap: 20px;
+        "user"
+        "work"
+        "play"
+        "study"
+        "exercise"
+        "social"
+        "self-care";
+    column-gap: var(--default-spacing);
+    row-gap: var(--default-spacing);
+    margin: var(--default-spacing);
+    height: 100%;
+}
 
-    margin: auto;
+@media screen and (min-width: 700px) {
+    html, body {
+        height: 100%;
+    }
+
+    main {
+        grid-template-columns: repeat(3, 1fr [col]);
+        grid-template-rows: repeat(2, auto [row]);
+        grid-template-areas:
+            "user work   play"
+            "user study  exercise"
+            "user social self-care";
+        height: 80%;
+        margin: auto var(--default-spacing);
+
+    }
+}
+
+@media screen and (min-width: 950px) {
+    main {
+        grid-template-columns: repeat(4, 1fr [col]);
+        grid-template-areas:
+            "user work     play   study"
+            "user exercise social self-care";
+        height: 518px;
+        margin: auto;
+    }
 }
 
 section {
@@ -76,7 +117,7 @@ p {
 }
 
 .header {
-    height: 25%;
+    height: 35%;
     border-radius: var(--border-radius) var(--border-radius) 0 0;
     display: flex;
     justify-content: flex-end;
@@ -95,15 +136,14 @@ p {
 }
 
 .content {
-    height: 67%;
-    margin-top: -10%;
+    height: 55%;
+    margin-top: -5%;
     background-color: var(--card-fill-color);
     border-radius: var(--border-radius);
-    transition: all .25s ease-in;
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: var(--card-padding);
+    padding: var(--default-spacing);
 }
 .content:hover {
     background-color: var(--card-fill-color-active);
@@ -119,33 +159,65 @@ p {
     font-size: 18px;
     font-weight: 400;
 }
+.content .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
+
+@media screen and (min-width: 700px) {
+    .header {
+        height: 20%;
+        min-height: 50px;
+    }
+    .content {
+        height: 68%;
+        margin-top: -5%;
+    }
+    .content .wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: auto;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .content {
+        margin-top: -5%;
+        height: 70%;
+    }
+}
 
 .user {
     grid-area: user;
-    height: 518px;
+    height: 200px;
 }
 
 .user .header {
     background-color: var(--user-card-color);
-    height: 60%;
+    height: 55%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
-    padding: var(--card-padding);
+    align-items: center;
+    padding: var(--default-spacing);
 }
 .user img {
-    width: 35%;
-    margin-bottom: var(--card-padding);
+    height: 85%;
+    margin: 0 var(--default-spacing) var(--default-spacing);
 }
-
+.user .user-info {
+    margin-bottom: var(--default-spacing);
+}
 .user .content {
-    height: 30%;
+    height: 15%;
 }
 .user .time-increments {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-around;
     height: 100%;
 
@@ -218,4 +290,43 @@ p {
 }
 .self-care .header {
     background-color: var(--card-6-color);
+}
+
+@media screen and (min-width: 700px) {
+    .user {
+        height: 100%;
+
+    }
+    .user .header {
+        flex-direction: column;
+        height: 60%;
+    }
+    .user img {
+        height: 30%;
+    }
+    .user .content {
+        height: 31%;
+
+    }
+    .user .time-increments {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .user {
+        height: 518px;
+    }
+    .user .header {
+        align-items: flex-start;
+        height: 58%;
+    }
+    .user .content {
+        height: 30%;
+    }
+    .user img {
+        height: 28%;
+        margin: 0 0 var(--default-spacing);
+    }
 }
