@@ -31,7 +31,7 @@ const setCardInfo = (info, increment) => {
 
 const applyUserData = () => {
     // Simulate short API delay
-    setTimeout(() => {
+    // setTimeout(() => {
         userData.forEach(data => {
             if (data.title === 'User') {
                 setUserInfo(data);
@@ -40,7 +40,7 @@ const applyUserData = () => {
             }
         })
 
-    }, Math.random() * 1000);
+    // }, Math.random() * 1000);
 }
 
 const update = (event) => {
