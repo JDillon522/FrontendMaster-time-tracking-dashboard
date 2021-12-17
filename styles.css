@@ -236,66 +236,6 @@ p {
     color: var(--font-color-primary);
 }
 
-.work {
-    grid-area: work;
-}
-.work .header .icon {
-    color: var(--card-1-icon-color);
-}
-.work .header {
-    background-color: var(--card-1-color);
-}
-
-.play {
-    grid-area: play;
-}
-.play .header .icon {
-    color: var(--card-2-icon-color);
-}
-.play .header {
-    background-color: var(--card-2-color);
-}
-
-.study {
-    grid-area: study;
-}
-.study .header .icon {
-    color: var(--card-3-icon-color);
-}
-.study .header {
-    background-color: var(--card-3-color);
-}
-
-.exercise {
-    grid-area: exercise;
-}
-.exercise .header .icon {
-    color: var(--card-4-icon-color);
-}
-.exercise .header {
-    background-color: var(--card-4-color);
-}
-
-.social {
-    grid-area: social;
-}
-.social .header .icon {
-    color: var(--card-5-icon-color);
-}
-.social .header {
-    background-color: var(--card-5-color);
-}
-
-.self-care {
-    grid-area: self-care;
-}
-.self-care .header .icon {
-    color: var(--card-6-icon-color);
-}
-.self-care .header {
-    background-color: var(--card-6-color);
-}
-
 @media screen and (min-width: 700px) {
     .user {
         height: 100%;

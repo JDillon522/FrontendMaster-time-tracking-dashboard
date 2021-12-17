@@ -30,13 +30,17 @@ const setCardInfo = (info, increment) => {
 }
 
 const applyUserData = () => {
-    userData.forEach(data => {
-        if (data.title === 'User') {
-            setUserInfo(data);
-        } else {
-            setCardInfo(data, increment);
-        }
-    })
+    // Simulate short API delay
+    setTimeout(() => {
+        userData.forEach(data => {
+            if (data.title === 'User') {
+                setUserInfo(data);
+            } else {
+                setCardInfo(data, increment);
+            }
+        })
+
+    }, Math.random() * 1000);
 }
 
 const update = (event) => {
