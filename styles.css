@@ -25,7 +25,7 @@
     --border-radius: 15px;
     --default-spacing: 20px;
     /* I cant use vars in media queries. Dukes..*/
-    --tablet-breakpoint: 700px;
+    --tablet-breakpoint: 720px;
     --desktop-breakpoint: 950px;
 }
 
@@ -66,9 +66,10 @@ main {
     height: 100%;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 720px) {
     html, body {
         height: 100%;
+        min-height: 860px;
     }
 
     main {
@@ -171,7 +172,7 @@ p {
 }
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 720px) {
     .header {
         height: 20%;
         min-height: 50px;
@@ -236,7 +237,7 @@ p {
     color: var(--font-color-primary);
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 720px) {
     .user {
         height: 100%;
 
