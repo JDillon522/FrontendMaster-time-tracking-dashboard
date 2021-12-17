@@ -1,5 +1,11 @@
-[
+const userData = [
   {
+    "title": "User",
+    "profileImg": "images/image-jeremy.png",
+    "name": "Jeremy Robson"
+  },
+  {
+    "selector": "work",
     "title": "Work",
     "timeframes": {
       "daily": {
@@ -17,6 +23,7 @@
     }
   },
   {
+    "selector": "play",
     "title": "Play",
     "timeframes": {
       "daily": {
@@ -34,6 +41,7 @@
     }
   },
   {
+    "selector": "study",
     "title": "Study",
     "timeframes": {
       "daily": {
@@ -51,6 +59,7 @@
     }
   },
   {
+    "selector": "exercise",
     "title": "Exercise",
     "timeframes": {
       "daily": {
@@ -68,6 +77,7 @@
     }
   },
   {
+    "selector": "social",
     "title": "Social",
     "timeframes": {
       "daily": {
@@ -85,6 +95,7 @@
     }
   },
   {
+    "selector": "self-care",
     "title": "Self Care",
     "timeframes": {
       "daily": {

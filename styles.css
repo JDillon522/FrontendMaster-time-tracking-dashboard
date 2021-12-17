@@ -116,6 +116,10 @@ p {
     font-weight: 300;
 }
 
+.loading {
+    display: none;
+}
+
 .header {
     height: 35%;
     border-radius: var(--border-radius) var(--border-radius) 0 0;

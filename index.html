@@ -19,17 +19,17 @@
   <main>
     <section class="user">
       <div class="header">
-        <img src="images/image-jeremy.png" alt="Jeremy Robson">
+        <img id="profileImg" src="" alt="" class="loading">
         <div class="user-info">
           <p class="subheading">Report for</p>
-          <h1>Jeremy Robson</h1>
+          <h1 id="username" class="loading"></h1>
         </div>
       </div>
       <div class="content">
         <div class="time-increments">
-          <button>Daily</button>
-          <button class="active">Weekly</button>
-          <button>Monthly</button>
+          <button onclick="update(event)">Daily</button>
+          <button onclick="update(event)" class="active">Weekly</button>
+          <button onclick="update(event)">Monthly</button>
         </div>
       </div>
     </section>
@@ -48,8 +48,8 @@
         </div>
 
         <div class="wrapper">
-          <h2><span class="time">15</span>hrs</h2>
-          <p class="subheading">Last Week - <span class="sub-time">5</span>hrs</p>
+          <h2><span class="time">0</span></h2>
+          <p class="subheading"><span class="sub-time">Last Week</span> - <span class="sub-time">5</span></p>
         </div>
       </div>
     </section>
@@ -68,8 +68,8 @@
         </div>
 
         <div class="wrapper">
-          <h2><span class="time">15</span>hrs</h2>
-          <p class="subheading">Last Week - <span class="sub-time">5</span>hrs</p>
+          <h2><span class="time">0</span></h2>
+          <p class="subheading"><span class="sub-time">Last Week</span> - <span class="sub-time">5</span></p>
         </div>
       </div>
     </section>
@@ -88,8 +88,8 @@
         </div>
 
         <div class="wrapper">
-          <h2><span class="time">15</span>hrs</h2>
-          <p class="subheading">Last Week - <span class="sub-time">5</span>hrs</p>
+          <h2><span class="time">0</span></h2>
+          <p class="subheading"><span class="sub-time">Last Week</span> - <span class="sub-time">5</span></p>
         </div>
       </div>
     </section>
@@ -108,8 +108,8 @@
         </div>
 
         <div class="wrapper">
-          <h2><span class="time">15</span>hrs</h2>
-          <p class="subheading">Last Week - <span class="sub-time">5</span>hrs</p>
+          <h2><span class="time">0</span></h2>
+          <p class="subheading"><span class="sub-time">Last Week</span> - <span class="sub-time">5</span></p>
         </div>
       </div>
     </section>
@@ -128,8 +128,8 @@
         </div>
 
         <div class="wrapper">
-          <h2><span class="time">15</span>hrs</h2>
-          <p class="subheading">Last Week - <span class="sub-time">5</span>hrs</p>
+          <h2><span class="time">0</span></h2>
+          <p class="subheading"><span class="sub-time">Last Week</span> - <span class="sub-time">5</span></p>
         </div>
       </div>
     </section>
@@ -148,8 +148,8 @@
         </div>
 
         <div class="wrapper">
-          <h2><span class="time">15</span>hrs</h2>
-          <p class="subheading">Last Week - <span class="sub-time">5</span>hrs</p>
+          <h2><span class="time">0</span></h2>
+          <p class="subheading"><span class="sub-time">Last Week</span> - <span class="sub-time">5</span></p>
         </div>
       </div>
     </section>
@@ -160,5 +160,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="data.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
