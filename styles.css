@@ -3,6 +3,7 @@
     --background-color: #0E1323;
     --user-card-color: #5747EA;
     --card-fill-color: #1C204B;
+    --card-fill-color-active: #33397A;
     --card-1-color: #FF8B64;
     --card-1-icon-color: #D96C47;
     --card-2-color: #55C2E6;
@@ -60,6 +61,15 @@ section {
 .header {
     height: 25%;
     border-radius: var(--border-radius) var(--border-radius) 0 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 5px;
+    overflow: hidden;
+}
+.header .icon {
+    margin-top: -5px;
+    width: 50px;
+    height: 50px;
 }
 
 .content {
@@ -67,12 +77,20 @@ section {
     margin-top: -13%;
     background-color: var(--card-fill-color);
     border-radius: var(--border-radius);
+    transition: all .25s ease-in;
+    position: relative;
+}
+.content:hover {
+    background-color: var(--card-fill-color-active);
 }
 
 .user {
     grid-area: user;
     height: 518px;
 }
+/* .user .header .icon {
+    color: var(--card-1-icon-color);
+} */
 .user .header {
     background-color: var(--user-card-color);
     height: 70%;
@@ -85,12 +103,18 @@ section {
 .work {
     grid-area: work;
 }
+.work .header .icon {
+    color: var(--card-1-icon-color);
+}
 .work .header {
     background-color: var(--card-1-color);
 }
 
 .play {
     grid-area: play;
+}
+.play .header .icon {
+    color: var(--card-2-icon-color);
 }
 .play .header {
     background-color: var(--card-2-color);
@@ -99,12 +123,18 @@ section {
 .study {
     grid-area: study;
 }
+.study .header .icon {
+    color: var(--card-3-icon-color);
+}
 .study .header {
     background-color: var(--card-3-color);
 }
 
 .exercise {
     grid-area: exercise;
+}
+.exercise .header .icon {
+    color: var(--card-4-icon-color);
 }
 .exercise .header {
     background-color: var(--card-4-color);
@@ -113,12 +143,18 @@ section {
 .social {
     grid-area: social;
 }
+.social .header .icon {
+    color: var(--card-5-icon-color);
+}
 .social .header {
     background-color: var(--card-5-color);
 }
 
 .self-care {
     grid-area: self-care;
+}
+.self-care .header .icon {
+    color: var(--card-6-icon-color);
 }
 .self-care .header {
     background-color: var(--card-6-color);
